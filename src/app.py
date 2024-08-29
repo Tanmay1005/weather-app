@@ -11,6 +11,7 @@ def convert_temperature(temp_celsius, unit):
 st.title("🌤️ Weather App")
 
 st.sidebar.title("Options")
+
 unit = st.sidebar.radio("Select Temperature Unit:", ("Celsius", "Fahrenheit"))
 show_forecast = st.sidebar.checkbox("Show 5-Day Forecast")
 show_alerts = st.sidebar.checkbox("Show Weather Alerts")
@@ -92,3 +93,21 @@ if city:
 else:
     st.error("City not found or API error")
 
+st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        left: 40px;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 5px;
+    }
+    </style>
+    <div class="footer">
+        <p>Made by Tanmay Ambegaokar</p>
+        <p> The Product Manager Accelerator Program is designed to support PM professionals through every stage of their career.
+         
+    </div>
+    """, unsafe_allow_html=True)

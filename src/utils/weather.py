@@ -13,8 +13,7 @@ def get_weather(city):
             "icon": data['weather'][0]['icon'],
             "humidity": data['main']['humidity'],
             "wind_speed": data['wind']['speed'],
-            "sunrise": data['sys']['sunrise'],
-            "sunset": data['sys']['sunset']
+           
         }
     else:
         return None
