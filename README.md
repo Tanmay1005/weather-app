@@ -17,8 +17,16 @@ This is a simple weather app built using Python and Streamlit. The app allows us
 2. Install dependencies
     ```bash
     pip install -r requirements.txt
-3. Get your API key from OpenWeatherMap and add it to config.py.
+3. Get your API key from OpenWeatherMap and add it to config.py and script.js
 4. Run the app:
     ```bash
     streamlit run src/app.py
+
+5. Additionally if you want to test the app made on JS, run index.html file
+
+## How to get OpenWeatherMap API key
+
+1. Create an account on OpenWeatherMap (https://openweathermap.org/)
+2. Create an API key for free and save it.
+3. Paste the API key in config.py and script.js files for the apps to run.
 
